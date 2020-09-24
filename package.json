@@ -1,0 +1,27 @@
+{
+  "name": "restaurant-project",
+  "version": "1.0.0",
+  "description": "Sample restaurant webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechnicolorPanda/restaurant-project.git"
+  },
+  "keywords": [
+    "restaurant",
+    "webpage"
+  ],
+  "author": "Lorri A Romesberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TechnicolorPanda/restaurant-project/issues"
+  },
+  "homepage": "https://github.com/TechnicolorPanda/restaurant-project#readme",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
