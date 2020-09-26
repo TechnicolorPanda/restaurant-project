@@ -1,0 +1,109 @@
+body {
+    background-image: url("ThaiFusion.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+    .inputBtn {
+      width: 20%;
+      height: 12%;
+      font-family: arial,sans-serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+      margin-right: 3px;
+      margin-left: 3px;
+      display: inline-flex;
+      justify-content: space-evenly;
+      background-color: whitesmoke;
+      padding: 0px;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+      align-items: flex-end;
+      border:1px solid #ccc;
+      border-bottom:2px solid #bbb;
+      border-top:1px solid #ddd;
+      -webkit-border-radius:10px;
+      -moz-border-radius:10px;
+    }
+  
+    #back, #clear {
+      width: 45%;
+      height: 12%;
+      background-color: rgb(145, 147, 150);
+    }
+  
+    #back {
+      font-size: 48px;
+    }
+  
+    #plus, #minus, #times, #divide {
+      background-color: rgb(250, 200, 93);
+    }
+  
+  .flex-container {
+      width: 400px;
+      height: 525px;
+      margin: 0 auto;
+      margin-top: 45px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      justify-content: space-evenly;
+      background: #2f2e30 url("metal_image.jpg");
+      padding: 20px;
+      text-align: center;
+      border:2px solid lightslategray;
+      border-bottom:4px solid lightslategray;
+      border-top:2px solid lightslategrey;
+      -webkit-border-radius:10px;
+      -moz-border-radius:10px;
+  }
+  
+  .rows {
+      margin: 10px;
+      text-align: center;
+      position: relative;
+      justify-content: space-evenly;
+      display: inline;
+      line-height: 75px;
+      font-size: 30px;
+    }
+  
+  .box1 {
+    background-color:#cccccc;
+      margin-top: 10px;
+      height: 14px;
+      width: 360px;
+      text-align: right;
+      font-size: 14px;
+      padding: 10px;
+      position: relative;
+      justify-content: space-evenly;
+      border-top-width:2px;
+      border-right-width: 2px;
+      border-left-width: 2px;
+      border-bottom-width: 0px;
+      border-right-color:#aaa;
+      border-top-color:#ddd;
+      border-left-color:#ddd;
+  }
+  
+  .box2 {
+      background-color:#cccccc;
+      margin-bottom: 20px;
+      height: 48px;
+      width: 360px;
+      text-align: right;
+      font-size: 48px;
+      padding: 10px;
+      position: relative;
+      justify-content: space-evenly;
+      border-width:2px;
+      border-top-width: 0px;
+      border-bottom-color:#aaa;
+      border-right-color:#aaa;
+      border-left-color:#ddd;
+  }
+  
