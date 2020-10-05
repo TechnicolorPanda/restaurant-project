@@ -1,8 +1,8 @@
-const loadHome = function() {
+const loadMenu = function() {
 	const mainSection = document.createElement('section');
 	mainSection.classList.add('section-content');
 	mainSection.innerHTML = `
-		<h1 class="header">Thai Fusion</h1>
+		<h2 class="header">Menu</h2>
 	`;
 	//const image = document.createElement('image'); 
     //image.src="../dist/images/Thaifusion.jpg";
@@ -10,6 +10,6 @@ const loadHome = function() {
 
 	document.body.append(mainSection);
 };
-export {loadHome};
+export {loadMenu};
 
 

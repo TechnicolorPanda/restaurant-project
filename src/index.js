@@ -1,8 +1,11 @@
 
-import loadHome from "./modules/home";
+import {loadHome} from "./modules/home.js";
+import {loadMenu} from './modules/menu.js';
+import {loadContactInfo} from './modules/contactInfo.js';
 
-init();
+initiate();
 
-function init() {
+function initiate() {
+    console.log("initiate");
     loadHome();
 }
