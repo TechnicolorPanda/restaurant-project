@@ -4,9 +4,18 @@ const loadMenu = function() {
 	mainSection.innerHTML = `
 		<h2 class="header">Menu</h2>
 	`;
-	//const image = document.createElement('image'); 
-    //image.src="../dist/images/Thaifusion.jpg";
-    //document.body.append(image);
+
+//insert background image
+
+let style = document.createElement('style');
+style.innerHTML = `
+	body{
+		background-image: url("images/thaispices.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}`
+document.head.appendChild(style);
 
 	document.body.append(mainSection);
 };
