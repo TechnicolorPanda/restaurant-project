@@ -17,13 +17,6 @@ span, article, footer, time, small, aside {
   background: inherit;
 }
 
-body {
-  background-image: url("images/Thaifusion.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 img {
   display: block;
   width: 100%;
@@ -44,5 +37,5 @@ h1 {
 
 .header {
   margin-top: 152px;
-
 }
+
