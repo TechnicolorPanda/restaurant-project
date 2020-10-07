@@ -12,24 +12,11 @@ function initiate() {
     loadHome();
 }
 
-//create tabs
+//add event listeners for tabs
+//needs fixed
 
-//const header = document.querySelector('header');
+const switchPages = function(){
+        console.log('menu');
+}
 
-const menu = document.createElement('section');
-menu.innerHTML = `
-    <h2>Menu</h2>
-`
-
-const selectMenu = document.getElementById('menu');
-selectMenu.addEventListener("click", loadMenu());
-
-    // const selectContent = function(event) {
-    //     const newContentLink = event.target.closest('a');
-    //     const mainSection = document.querySelector('.section-content');
-
-        
-    // };
-
-    // header.addEventListener('click', selectContent);
-    // header.querySelector('.sections-list__link[data-content="home"]').click();
+section1.addEventListener('click', switchPages);

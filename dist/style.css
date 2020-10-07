@@ -33,9 +33,23 @@ h1 {
   border-width: 0px;
   border-color: #ccc;
   border-radius: 0%;
+  margin-top: 50px;
 }
 
 .header {
-  margin-top: 152px;
+  margin-top: 32px;
 }
 
+nav ul {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 2.5rem;
+  list-style-type: none;
+}
+
+li {
+  font-size: 32px;
+  color:red;
+}
