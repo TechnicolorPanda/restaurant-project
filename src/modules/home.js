@@ -8,9 +8,9 @@ const loadHome = function() {
 	sectionTabs.innerHTML = `
 		<nav class = 'header'>
 			<ul>
-				<li><a href = '#home'>Home</a></li>
-				<li><a href = '#menu'>Menu</a></li>
-				<li><a href = '#contacts'>Contacts</a></li>
+				<li id = 'home'>Home</a></li>
+				<li id = 'menu'>Menu</a></li>
+				<li id = 'contacts'>Contacts</a></li>
 			</ul>
 		</nav>
 		`
@@ -33,8 +33,10 @@ const loadHome = function() {
 			background-attachment: fixed;
 			background-size: cover;
 		}`
-	document.head.appendChild(style);
 
+	//append elements to page
+
+	document.head.appendChild(style);
 	document.body.append(sectionTabs);
 	document.body.append(mainSection);
 

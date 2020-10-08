@@ -13,10 +13,32 @@ function initiate() {
 }
 
 //add event listeners for tabs
-//needs fixed
 
-const switchPages = function(){
-        console.log('menu');
+const homeTab = document.querySelector('#home');
+const menuTab = document.querySelector('#menu');
+const contactsTab = document.querySelector('#contacts')
+
+homeTab.addEventListener('click', () => {
+    console.log('home');
+    resetPage();
+    loadHome();
+})
+
+menuTab.addEventListener('click', () => {
+    console.log('menu');
+    loadMenu();
 }
+)
 
-section1.addEventListener('click', switchPages);
+contactsTab.addEventListener('click', () => {
+    console.log('contacts');
+    loadContactInfo();
+}
+)
+
+//reset page to change tabs
+//*fix*
+
+const resetPage = function() {
+    console.log('reset');
+}
