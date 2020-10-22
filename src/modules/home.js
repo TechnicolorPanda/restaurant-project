@@ -1,29 +1,11 @@
 const loadHome = function(contentSection) {
 
-	//insert tabs
-
-	const sectionTabs = document.createElement ('section1');
-
-	console.log(sectionTabs.childElementCount);
-
-	if(sectionTabs.childElementCount==0) {		
-		sectionTabs.innerHTML = `
-			<nav class = 'header'>
-				<ul>
-					<li id = 'home'>Home</a></li>
-					<li id = 'menu'>Menu</a></li>
-					<li id = 'contacts'>Contacts</a></li>
-				</ul>
-			</nav>
-			`
-	} else {
-		console.log('next');
-	};
+	console.log('load home');
 
 	//insert restaurant name
 
-	contentSection.innerHTML = `
-		<h1 class='header'>Thai Fusion</h1>
+	contentSection.innerHTML =
+	`		<h1 class='header'>Thai Fusion</h1>
 	`;
 
 	//insert background image
@@ -40,7 +22,6 @@ const loadHome = function(contentSection) {
 	//append elements to page
 
 	document.head.appendChild(style);
-	document.body.append(sectionTabs);
 	document.body.append(contentSection);
 
 };

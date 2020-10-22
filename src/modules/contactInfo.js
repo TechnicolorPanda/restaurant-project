@@ -2,7 +2,7 @@ const loadContactInfo = function(contentSection) {
 
 	// insert title
 
-	contentSection.innerHTML = `
+	contentSection.innerHTML = 	`
 		<h2 class = "header">Contact</h2>
 		<h3 class = "body">2745 10 Mile Road NE, Rockford, MI 49341, (616) 866-0097</hs>
 	`;
@@ -17,9 +17,8 @@ const loadContactInfo = function(contentSection) {
 			background-attachment: fixed;
 			background-size: cover;
 		}`
+		
 	document.head.appendChild(style);
-
-
 	document.body.append(contentSection);
 };
 

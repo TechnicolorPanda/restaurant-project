@@ -14,11 +14,24 @@ function initiatePage() {
 
     loadHome(contentSection);
 
-    //add event listeners for tabs
+    //load tabs
+
+    const sectionTabs = document.querySelector('#tabs');
+
+    sectionTabs.innerHTML =
+        `<nav class = 'header'>
+            <ul>
+                <li id = 'home'>Home</a></li>
+                <li id = 'menu'>Menu</a></li>
+                <li id = 'contacts'>Contacts</a></li>
+            </ul>
+        </nav>`
 
     const homeTab = document.querySelector('#home');
     const menuTab = document.querySelector('#menu');
-    const contactsTab = document.querySelector('#contacts')
+    const contactsTab = document.querySelector('#contacts');
+
+    //add event listeners for tabs
 
     homeTab.addEventListener('click', () => {
         console.log('home');
