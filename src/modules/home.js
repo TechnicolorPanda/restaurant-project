@@ -1,25 +1,28 @@
-const loadHome = function() {
+const loadHome = function(contentSection) {
 
 	//insert tabs
 
 	const sectionTabs = document.createElement ('section1');
-	sectionTabs.classList.add('section-content');
-	console.log("section tabs");
-	sectionTabs.innerHTML = `
-		<nav class = 'header'>
-			<ul>
-				<li id = 'home'>Home</a></li>
-				<li id = 'menu'>Menu</a></li>
-				<li id = 'contacts'>Contacts</a></li>
-			</ul>
-		</nav>
-		`
+
+	console.log(sectionTabs.childElementCount);
+
+	if(sectionTabs.childElementCount==0) {		
+		sectionTabs.innerHTML = `
+			<nav class = 'header'>
+				<ul>
+					<li id = 'home'>Home</a></li>
+					<li id = 'menu'>Menu</a></li>
+					<li id = 'contacts'>Contacts</a></li>
+				</ul>
+			</nav>
+			`
+	} else {
+		console.log('next');
+	};
 
 	//insert restaurant name
 
-	const mainSection = document.createElement('section2');
-	mainSection.classList.add('section-content');
-	mainSection.innerHTML = `
+	contentSection.innerHTML = `
 		<h1 class='header'>Thai Fusion</h1>
 	`;
 
@@ -28,7 +31,7 @@ const loadHome = function() {
 	let style = document.createElement('style');
 	style.innerHTML = `
 		body{
-			background-image: url("images/Thaifusion.jpg");
+			background-image: url("images/thaispices.jpg");
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
@@ -38,7 +41,7 @@ const loadHome = function() {
 
 	document.head.appendChild(style);
 	document.body.append(sectionTabs);
-	document.body.append(mainSection);
+	document.body.append(contentSection);
 
 };
 

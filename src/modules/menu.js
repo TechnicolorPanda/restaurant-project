@@ -1,24 +1,25 @@
-const loadMenu = function() {
-	const mainSection = document.createElement('section');
-	mainSection.classList.add('section-content');
-	mainSection.innerHTML = `
+//const contentSection = document.createElement('section1');
+
+const loadMenu = function(contentSection) {
+
+	contentSection.innerHTML = `
 		<h2 class="header">Menu</h2>
 	`;
 
-//insert background image
+	//insert background image
 
-let style = document.createElement('style');
-style.innerHTML = `
-	body{
-		background-image: url("images/thaispices.jpg");
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: cover;
-	}`
-document.head.appendChild(style);
-
-	document.body.append(mainSection);
+	let style = document.createElement('style');
+	style.innerHTML = `
+		body{
+			background-image: url("images/Thaifusion.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}`
+	document.head.appendChild(style);
+	document.body.append(contentSection);
 };
+
 export {loadMenu};
 
 

@@ -1,44 +1,57 @@
 //import page modules
 
-import {loadHome} from "./modules/home.js";
+import {loadHome} from './modules/home.js';
 import {loadMenu} from './modules/menu.js';
 import {loadContactInfo} from './modules/contactInfo.js';
 
-//load home page
+initiatePage();
 
-initiate();
+function initiatePage() {
 
-function initiate() {
-    loadHome();
+    //load home page
+
+    const contentSection = document.querySelector('#content');
+
+    loadHome(contentSection);
+
+    //add event listeners for tabs
+
+    const homeTab = document.querySelector('#home');
+    const menuTab = document.querySelector('#menu');
+    const contactsTab = document.querySelector('#contacts')
+
+    homeTab.addEventListener('click', () => {
+        console.log('home');
+        console.log(contentSection.childElementCount);
+        resetPage(contentSection);
+        loadHome(contentSection);
+        }
+    )
+
+    menuTab.addEventListener('click', () => {
+        console.log('menu');
+        console.log(contentSection.childElementCount);
+        resetPage(contentSection);
+        loadMenu(contentSection);
+        }
+    )
+
+    contactsTab.addEventListener('click', () => {
+        console.log('contacts');
+        console.log(contentSection.childElementCount);
+        resetPage(contentSection);
+        loadContactInfo(contentSection);
+        }
+    )
 }
-
-//add event listeners for tabs
-
-const homeTab = document.querySelector('#home');
-const menuTab = document.querySelector('#menu');
-const contactsTab = document.querySelector('#contacts')
-
-homeTab.addEventListener('click', () => {
-    console.log('home');
-    resetPage();
-    loadHome();
-})
-
-menuTab.addEventListener('click', () => {
-    console.log('menu');
-    loadMenu();
-}
-)
-
-contactsTab.addEventListener('click', () => {
-    console.log('contacts');
-    loadContactInfo();
-}
-)
 
 //reset page to change tabs
-//*fix*
 
-const resetPage = function() {
+const resetPage = function(contentSection) {
+
     console.log('reset');
-}
+
+    while (contentSection.childElementCount > 0) {
+        contentSection.removeChild(contentSection.lastChild);
+    }
+};

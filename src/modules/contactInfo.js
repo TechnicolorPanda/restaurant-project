@@ -1,10 +1,8 @@
-const loadContactInfo = function() {
-	const mainSection = document.createElement('section');
-	mainSection.classList.add('section-content');
+const loadContactInfo = function(contentSection) {
 
 	// insert title
 
-	mainSection.innerHTML = `
+	contentSection.innerHTML = `
 		<h2 class = "header">Contact</h2>
 		<h3 class = "body">2745 10 Mile Road NE, Rockford, MI 49341, (616) 866-0097</hs>
 	`;
@@ -14,7 +12,7 @@ const loadContactInfo = function() {
 	let style = document.createElement('style');
 	style.innerHTML = `
 		body{
-			background-image: url("images/thaispices.jpg");
+			background-image: url("images/thairestaurant.jpg");
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
@@ -22,8 +20,7 @@ const loadContactInfo = function() {
 	document.head.appendChild(style);
 
 
-	document.body.append(mainSection);
+	document.body.append(contentSection);
 };
+
 export {loadContactInfo};
-
-
