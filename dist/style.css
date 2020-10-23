@@ -14,7 +14,6 @@ span, article, footer, time, small, aside {
   text-decoration: inherit;
   vertical-align: inherit;
   box-sizing: inherit;
-  background: inherit;
 }
 
 img {
@@ -37,11 +36,50 @@ h1 {
 }
 
 h2 {
-  color: purple;
+  font-size: 50px;
+  font-family: serif;
+  color: rgb(48, 4, 4);
+  text-align: center;
+  text-shadow: 0 0 10px white;
+  border-style: none;
+  border-width: 0px;
+  border-color: #ccc;
+  border-radius: 0%;
+  margin-top: 50px;
+}
+
+h3 {
+  font-size: 36px;
+  font-family: serif;
+  color: black;
+  text-align: center;
+  border-style: none;
+  border-width: 0px;
+  border-color: #ccc;
+  border-radius: 0%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: serif;
+  color: black;
+  text-align: center;
+  border-style: none;
+  border-width: 0px;
+  border-color: #ccc;
+  border-radius: 0%;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .header {
   margin-top: 32px;
+}
+
+.intro {
+  font-style: italic;
 }
 
 nav ul {
@@ -51,9 +89,52 @@ nav ul {
   align-items: center;
   height: 2.5rem;
   list-style-type: none;
-}
-
-li {
   font-size: 32px;
   color:red;
+}
+
+
+dt a {
+  width: 80%;
+  font-size: large;
+  margin-bottom: 8px;
+}
+
+dd a {
+  margin-left: 32px;
+  display: block;
+  width: 80%;
+  font-size: medium;
+  margin-bottom: 8px;
+}
+
+dt b {
+  width: 100%;
+  font-size: large;
+  margin-bottom: 8px;
+}
+
+#content {
+  background-color:rgba(236, 208, 199, 0.712);
+  margin: 5%;
+  width: 90%;
+  text-align: left;
+  font-size: 24px;
+  color:  black;
+  padding: 10px;
+  position: relative;
+  justify-content: space-evenly;
+  border:10px;
+  border-radius: 1%;
+}
+
+#tabs {
+  background-color:black;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  position: relative;
+  justify-content: space-evenly;
+  border:10px;
+  border-color: rgb(51, 14, 2)
 }

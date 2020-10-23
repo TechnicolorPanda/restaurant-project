@@ -23,7 +23,7 @@ function initiatePage() {
             <ul>
                 <li id = 'home'>Home</a></li>
                 <li id = 'menu'>Menu</a></li>
-                <li id = 'contacts'>Contacts</a></li>
+                <li id = 'contacts'>Contact Us</a></li>
             </ul>
         </nav>`
 
